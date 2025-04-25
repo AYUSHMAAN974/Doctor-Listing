@@ -1,0 +1,200 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .doctor-detail-modal {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: zoom-in 0.3s forwards;
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .detail-header h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .detail-content {
+    padding: 20px;
+  }
+  
+  .detail-top {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .detail-photo {
+    flex: 0 0 150px;
+    margin-right: 20px;
+  }
+  
+  .detail-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #e1e8f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-primary-info {
+    flex: 1;
+  }
+  
+  .detail-name {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #0066cc;
+  }
+  
+  .detail-specialty {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  .detail-experience {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .detail-consultation-types {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .detail-fee {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .detail-sections {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .detail-section {
+    margin-bottom: 20px;
+  }
+  
+  .detail-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #0066cc;
+  }
+  
+  .detail-section p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .clinic-detail {
+    margin-bottom: 10px;
+  }
+  
+  .clinic-logo {
+    margin-top: 15px;
+  }
+  
+  .clinic-logo img {
+    max-height: 40px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  
+  .detail-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .large-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    min-width: 200px;
+  }
+  
+  .large-btn small {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+  .large-btn:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    .detail-top {
+      flex-direction: column;
+    }
+    
+    .detail-photo {
+      align-self: center;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }

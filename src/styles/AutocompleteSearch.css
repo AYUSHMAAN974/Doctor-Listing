@@ -1,0 +1,54 @@
+.autocomplete {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: white;
+}
+
+.search-input:focus {
+  border-color: #0055aa;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white; /* This stays white */
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-list li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  color: #333; /* Ensure text is visible against white background */
+  background-color: white; /* Explicitly set background color */
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f5ff;
+  color: #0066cc;
+}

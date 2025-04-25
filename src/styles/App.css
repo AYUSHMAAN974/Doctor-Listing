@@ -1,0 +1,77 @@
+body {
+  background-color: #f0f5ff;
+  color: #333;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #0066cc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
+  color: white;
+}
+
+.app-title {
+  margin: 0 0 15px 0;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-sidebar {
+  flex: 0 0 280px;
+}
+
+.results-container {
+  flex: 1;
+}
+
+.loading, .error, .no-results {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.loading {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+.error {
+  color: #e53935;
+}
+
+.no-results {
+  color: #666;
+}
+
+/* Modal open state for body */
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .filter-sidebar {
+    flex: auto;
+  }
+}
