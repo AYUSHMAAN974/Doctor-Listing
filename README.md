@@ -16,6 +16,5 @@ This project implements a doctor listing page with filtering and search function
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 
-### Installation
-
-1. Clone the repository
+# Deployment
+https://creative-croissant-fe4281.netlify.app/
